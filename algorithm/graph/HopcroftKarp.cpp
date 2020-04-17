@@ -11,15 +11,6 @@ int n, m, p;
 vector <int> adj[N];
 int matchX[N], matchY[N], d[N];
 
-void Read_Input() {
-    scanf("%d%d%d", &n, &m, &p); //set N - set M , p edge
-    int x, y;
-    while (p--) {
-        scanf("%d%d", &x, &y);
-        adj[x].push_back(y); //x in N - y in M
-    }
-}
-
 bool FindPath() {
     queue <int> Q;
     memset(d, 0, sizeof(d));
@@ -63,8 +54,17 @@ void MaxMatch() {
     //FOR(i, 1, n) if (matchX[i]) printf("%d %d\n", i, matchX[i]);
 }
 
+void readInput() {
+    scanf("%d%d%d", &n, &m, &p); //set N - set M , p edge
+    int x, y;
+    while (p--) {
+        scanf("%d%d", &x, &y);
+        adj[x].push_back(y); //x in N - y in M
+    }
+}
+
 int main() {
-    Read_Input();
+    readInput();
     MaxMatch();
     return 0;
 }
