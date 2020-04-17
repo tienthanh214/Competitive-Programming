@@ -17,7 +17,7 @@ public:
         return par[u] = Root(par[u]); //path compressed
     }
     bool Union(int x, int y) {
-        //return 0 if x, y same set else 1.
+        //return 0 if x, y in same set else 1.
         x = Root(x); y = Root(y);
         if (x == y) return 0;
         if (par[x] > par[y]) swap(x, y);
