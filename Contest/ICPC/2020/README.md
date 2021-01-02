@@ -6,6 +6,7 @@
 * Nguyen Dang Tien Thanh (K19 - Honors Program)
 * Nguyen Pham Nhat Huy (K20 - Honors Program)
 * Ho Van Son (K20 - Honors Program) 
+
 Là 3 cựu học sinh của trường THPT chuyên Quốc Học Huế
 
 ## Achievement 
