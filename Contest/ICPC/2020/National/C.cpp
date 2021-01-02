@@ -18,6 +18,7 @@ int main() {
     // that n - m >= k
     // and  n - max >= k
     // x1 + x2 + .. xm = n and x1 = max
+    
     for (int m = 1; m <= n - k; ++m) {
         vector<vector<int>> adj;
         int maxNode = min(n - k, n - m + 1);
