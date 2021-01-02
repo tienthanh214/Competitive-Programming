@@ -13,3 +13,5 @@ Là 3 cựu học sinh của trường THPT chuyên Quốc Học Huế
 * Top 20 - The 2020 ICPC Vietnam National Programming Contest (15/11/2020)
 * Top 9 - The 2020 ICPC Vietnam Southern Provincial Programming Contest (25/10/2020)
 * Top 8 - The 2020 ICPC HCMUS Programming Contest (18/10/2020)
+
+# Covid19 - biến cố?
