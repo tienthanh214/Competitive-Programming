@@ -9,7 +9,6 @@ const int N = 3e5 + 10;
 
 int n;
 vector<vector<ii>> adj;
-//priority_queue<LL, vector<LL>, greater<LL>> maxChild[N];
 LL depth[N];
 LL longest[N];
 LL minDiff;
