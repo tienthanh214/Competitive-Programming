@@ -58,7 +58,7 @@ struct SegmentTree {
         }
         // res =  X.resL <op[i]> cal(i + 1, j - 1) <op[j]> Y.resR
         // dung toan de tinh X.resL dua tren X.numR chuyen ve doi dau
-        // tuong tu Y.resR
+        // the same as Y.resR
         int numMid = concat(X.numR, Y.numL, Y.lenL);
         int sumLeft = (X.res - X.numR + base) % base;
         int sumRight = (Y.res - Y.numL + base) % base;
@@ -141,7 +141,7 @@ int main() {
     while (q--) {
         char type;
         scanf(" %c", &type);
-        //cout << type << endl;
+        
         if (type == '?') {
             int l, r;
             scanf("%d%d", &l, &r);
