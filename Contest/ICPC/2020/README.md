@@ -15,3 +15,4 @@ Là 3 cựu học sinh của trường THPT chuyên Quốc Học Huế
 * Top 8 - The 2020 ICPC HCMUS Programming Contest (18/10/2020)
 
 # Covid19 - biến cố?
+## ...
