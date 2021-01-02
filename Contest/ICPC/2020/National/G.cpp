@@ -154,24 +154,6 @@ int Rand(int l, int r) {
                 (LL)rand()) % (r - l + 1);
 }
 
-void gen() {
-    srand(time(0));
-    freopen("input.txt", "w", stdout);
-    int n = 10;
-    cout << n << endl;
-    for (int i = 1; i <= n; ++i)
-        cout << 2 * 2 * 2 * 3 * 3 * 3 * 3 * 5 * 5 * 5 << " ";
-    cout << endl;
-    for (int i = 2; i <= n; ++i) {
-        int u, v, w;
-        u = Rand(1, 1);
-        v = Rand(i, i);
-        w = 1;
-        cout << u << " " << v << " " << w << endl;
-    }
-    cout << 0;
-}
-
 int main() {
     //gen();
    // return 0;
