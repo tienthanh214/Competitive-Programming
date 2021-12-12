@@ -1,3 +1,10 @@
+// AC in practice
+
+/*
+    for odd vertex (true : not rotate) first
+    then for even vertex
+*/
+
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -23,7 +30,6 @@ struct Rect {
         LL y0 = max(2 * y - h, 2 * other.y - other.h);
         LL x1 = min(2 * x + w, 2 * other.x + other.w);
         LL y1 = min(2 * y + h, 2 * other.y + other.h);
-        // cout << x0 /2.0 << " " << y0/2.0 << " " << x1/2.0 << " " << y1/2.0 << endl;
         return (x0 < x1 && y0 < y1);
     }
 } rect[MAX_N];
@@ -89,8 +95,9 @@ void DFS(int u) {
             setColor(u, -1); 
     }
     if (low[u] == num[u]) {
-        if (col[u] == 0) 
+        if (col[u] == 0) {
             setColor(u, 1);
+        }
         int x = 0;
         do {
             x = S.top(); S.pop();
@@ -108,7 +115,12 @@ void solve() {
     for (int i = 0; i < 2 * n; ++i)
         sort(g[i].begin(), g[i].end());
     timer = 0;
-    for (int i = 0; i < 2 * n; ++i) {
+    for (int i = 0; i < 2 * n; i += 2) {
+        if (!num[i]) {
+            DFS(i);
+        }
+    }
+    for (int i = 1; i < 2 * n; i += 2) {
         if (!num[i]) {
             DFS(i);
         }
