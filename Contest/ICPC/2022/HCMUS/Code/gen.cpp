@@ -21,7 +21,7 @@ int main()
     for (int iTest = 1; iTest <= NTEST; iTest++)
     {
         ofstream inp("input.txt");
-        int n = 300000;
+        int n = 3e5;
         int q = 1e5;
         inp << n << ' ' << q << endl;
         vector<int> p;
@@ -31,9 +31,9 @@ int main()
         for (int i = 0; i < n; ++i) inp << p[i] << ' ';
         inp << endl;
         for (int i = 0; i < q; ++i) {
-                int x = Rand(1, n);
-                int y = Rand(1, n);
-                inp << x << ' ' << y << endl;
+            int x = Rand(1, n);
+            int y = Rand(1, n);
+            inp << x << ' ' << y << endl;
         }
         inp.close();
         system((NAME + ".exe").c_str());
